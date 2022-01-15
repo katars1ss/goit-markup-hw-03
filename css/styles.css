@@ -1,0 +1,185 @@
+:root {
+    --primery-text-color:#757575;
+    --white-text-color:#ffffff;
+    --black-text-color:#000000;
+    --title-text-color:#212121;
+    --accent-color:#2196f3;
+    --primery-bg-color:#ffffff;
+    --secondary-bg-color:#eeeeee;
+    --footer-bg-color:#2F303A;
+    --cards-bg-color:#eeeeee;
+    --team-bg-color:#f5f4fa;
+    --primery-logo-color:#2196f3;
+    --deco-logo-color:#000000;
+    --deco-footer-logo:#ffffff;
+    /* ---декоративная разделительная линия--- */
+    --deco-line-color:#ececec;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Roboto",sans-serif;
+    color: var(--primery-text-color);
+    line-height: 1.5;
+
+    height: 100%;
+
+    background-color: var(--primery-bg-color);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+
+
+
+.btn {
+    padding: ;
+
+    font-family: "Roboto",sans-serif;
+    color: var(--white-text-color);
+    border-radius: 4px;
+    background-color: var(--accent-color);
+}
+
+/* ----------Header----------- */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primery-logo-color);
+
+    text-decoration: none;
+}
+.logo-deco {
+    color: var(--deco-logo-color);
+}
+
+
+.nav-list a {
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+.nav-link.active {
+    color :var(--accent-color);
+}
+
+.contacts-link {
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primery-text-color);
+}
+.contacts-link:hover {
+    color: var(--accent-color);
+}
+
+
+/* ----------Студия---------- */
+.hero {
+    background-color: var(--footer-bg-color);
+}
+.hero-title {
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.36;
+
+    color: var(--white-text-color);
+    text-transform: uppercase;
+
+}
+.hero-btn {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+/* ------------Features---------- */
+.features-title {
+    visibility:hidden;
+}
+.features-list-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+    text-transform: uppercase;
+}
+
+/* ----------About------------ */
+.about-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    color: var(--title-text-color);
+}
+
+
+/* -----------Our-team------------ */
+.our-team-title .stuff-name {
+    font-family: Roboto;
+    color: var(--title-text-color);
+}
+.our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.stuff-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+.title-position {
+    line-height: 1.18;
+}
+
+/* ----------Footer----------- */
+.footer {
+    background-color: var(--footer-bg-color);
+}
+.logo-footer-deco {
+    color: var(--deco-footer-logo);
+}
+
+.contacts-link-addr {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--white-text-color);
+}
+
+
+
