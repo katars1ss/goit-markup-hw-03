@@ -9,6 +9,7 @@
     --footer-bg-color:#2F303A;
     --cards-bg-color:#eeeeee;
     --team-bg-color:#f5f4fa;
+    --secondary-btn-color:#f5f4fa;
     --primery-logo-color:#2196f3;
     --deco-logo-color:#000000;
     --deco-footer-logo:#ffffff;
@@ -48,14 +49,18 @@ a {
 .btn {
     padding: ;
 
-    font-family: "Roboto",sans-serif;
+    font-family: inherit;
     color: var(--white-text-color);
+
     border-radius: 4px;
     background-color: var(--accent-color);
+
+    cursor:pointer;
 }
 
-/* ----------Header----------- */
+/* -------------Header------------- */
 
+ /* -------Logo---- - */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -68,8 +73,11 @@ a {
 .logo-deco {
     color: var(--deco-logo-color);
 }
+.logo-footer-deco {
+    color: var(--deco-footer-logo);
+}
 
-
+/* ------Site navigation------- */
 .nav-list a {
     font-family: "Roboto",sans-serif;
     font-weight: 700;
@@ -85,6 +93,7 @@ a {
     color :var(--accent-color);
 }
 
+/* ---------Contacts-------- */
 .contacts-link {
     font-family: "Roboto",sans-serif;
     font-weight: 500;
@@ -92,17 +101,40 @@ a {
     line-height: 1.14;
     color: var(--primery-text-color);
 }
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-link-addr:hover,
+.contacts-link-addr:focus {
     color: var(--accent-color);
 }
 
+/* ---------------Footer--------------- */
+.footer {
+    background-color: var(--footer-bg-color);
+}
+.logo-footer-deco {
+    color: var(--deco-footer-logo);
+}
 
-/* ----------Студия---------- */
+.contacts-link-addr {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--white-text-color);
+}
+
+
+
+
+
+/* -----------------Студия-------------- */
 .hero {
     background-color: var(--footer-bg-color);
 }
 .hero-title {
-    font-family: "Roboto",sans-serif;
     font-weight: 700;
     font-size: 44px;
     line-height: 1.36;
@@ -123,7 +155,6 @@ a {
     visibility:hidden;
 }
 .features-list-title {
-    font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -135,7 +166,6 @@ a {
 
 /* ----------About------------ */
 .about-title {
-    font-family: Roboto;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -146,7 +176,6 @@ a {
 
 /* -----------Our-team------------ */
 .our-team-title .stuff-name {
-    font-family: Roboto;
     color: var(--title-text-color);
 }
 .our-team-title {
@@ -163,23 +192,38 @@ a {
     line-height: 1.18;
 }
 
-/* ----------Footer----------- */
-.footer {
-    background-color: var(--footer-bg-color);
-}
-.logo-footer-deco {
-    color: var(--deco-footer-logo);
-}
 
-.contacts-link-addr {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
 
+/* ------------Portfolio----------- */
+.filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    color: var(--title-text-color);
+    background-color: var(--secondery-btn-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
     color: var(--white-text-color);
+    background-color: var(--accent-color);
 }
+
+
+.card-link-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+
+    color: var(--title-text-color);
+}
+.card-link-text {
+    font-size: 16px;
+    line-height: 1.87;
+
+    color: var(--primery-text-color);
+}
+
 
 
 
