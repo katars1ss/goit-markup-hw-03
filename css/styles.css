@@ -265,8 +265,7 @@ a {
 
     background-color: var(--primery-bg-color);
 }
-.card-link-title {
-    font-style: normal;
+.card-title {
     font-weight: 700;
     font-size: 18px;
 
@@ -275,14 +274,15 @@ a {
 
     color: var(--title-text-color);
 }
-.card-link-text {
-    font-style: normal;
+.card-text {
     font-size: 16px;
 
     line-height: 1.87;
 
     color: var(--primery-text-color);
 }
+
+/* -------------------------- */
 
 
 
