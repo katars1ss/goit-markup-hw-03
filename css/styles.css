@@ -11,20 +11,15 @@
     --team-bg-color:#f5f4fa;
     --secondary-btn-color:#f5f4fa;
     --primery-logo-color:#2196f3;
-    --deco-logo-color:#000000;
-    --deco-footer-logo:#ffffff;
     /* ---декоративная разделительная линия--- */
     --deco-line-color:#ececec;
 }
 
 body {
-    margin: 0;
-    height: 100%;
-
     font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     color: var(--primery-text-color);
-    line-height: 1.5;
-    letter-spacing: 0.03em;
 
     background-color: var(--primery-bg-color);
 }
@@ -35,7 +30,7 @@ body {
     box-sizing: border-box;
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
@@ -45,11 +40,14 @@ a {
 
 
 
-
 .btn {
-    padding: ;
-
     font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    line-height: 1.87;
+    letter-spacing: 0.06em;
     color: var(--white-text-color);
 
     border-radius: 4px;
@@ -61,25 +59,37 @@ a {
 /* -------------Header------------- */
 
  /* -------Logo---- - */
-.logo {
+.header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
-    color: var(--primery-logo-color);
 
-    text-decoration: none;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: var(--accent-color);
 }
-.logo-deco {
-    color: var(--deco-logo-color);
+.header-logo-deco {
+    color: var(--black-text-color);
 }
-.logo-footer-deco {
-    color: var(--deco-footer-logo);
+
+.footer-logo {
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: var(--accent-color);
+}
+.footer-logo-deco {
+    color: var(--white-text-color);
 }
 
 /* ------Site navigation------- */
 
-.nav-link {
+.header-nav-link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -89,16 +99,16 @@ a {
 
     color: var(--title-text-color);
 }
-.nav-link:hover,
-.nav-link:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
     color: var(--accent-color);
 }
-.nav-link.active {
+.header-nav-link.active {
     color :var(--accent-color);
 }
 
 /* ---------Contacts-------- */
-.contacts-link {
+.header-contacts-link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -108,10 +118,12 @@ a {
 
     color: var(--primery-text-color);
 }
-.contacts-link:hover,
-.contacts-link:focus,
-.contacts-link-addr:hover,
-.contacts-link-addr:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus,
+.footer-contacts-link:hover,
+.footer-contacts-link:focus,
+.footer-link-addr:hover,
+.footer-link-addr:focus {
     color: var(--accent-color);
 }
 
@@ -119,27 +131,23 @@ a {
 .footer {
     background-color: var(--footer-bg-color);
 }
-.logo-footer-deco {
-    color: var(--deco-footer-logo);
-}
-
-.contacts-link-addr {
+.footer-link-addr {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
 
     line-height: 1.71;
 
     color: var(--white-text-color);
 }
-.contacts-link {
+.footer-contacts-link {
     font-style: normal;
     font-size: 14px;
 
     line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 
 
@@ -243,29 +251,33 @@ a {
 
 
 /* ------------Portfolio----------- */
-.filter-btn {
+.portfolio-title {
+    visibility: hidden;
+}
+.portfolio-filter-btn {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
 
     line-height: 1.62;
+    letter-spacing: 0.03em;
 
     color: var(--title-text-color);
     background-color: var(--secondery-btn-color);
 }
-.filter-btn:hover,
-.filter-btn:focus {
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
 }
 
-.card-item {
+.portfolio-card-item {
     width: 370px;
     height: 404px;
 
     background-color: var(--primery-bg-color);
 }
-.card-title {
+.portfolio-card-title {
     font-weight: 700;
     font-size: 18px;
 
@@ -274,7 +286,7 @@ a {
 
     color: var(--title-text-color);
 }
-.card-text {
+.portfolio-card-text {
     font-size: 16px;
 
     line-height: 1.87;
