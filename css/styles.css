@@ -32,13 +32,31 @@ body {
     background-color: var(--primery-bg-color);
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 ;
+    color: var(--title-text-color);
+}
+p {
+    margin: 0;
+}
 
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+    width: 1200px;
+}
+.section {
+    margin: 0;
+    padding: 94px 0 94px 0;
+}
 .link {
     text-decoration: none;
 }
-
 .list {
     margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -63,8 +81,24 @@ body {
 
 /* -------------Header------------- */
 
+.header {
+    margin: 0;
+    padding: 24px 0 25px 0;
+
+    border-bottom: 1px solid var(--deco-line-color);
+
+    background-color: var(--primery-bg-color);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
  /* -------Logo---- - */
 .header-logo {
+    display: inline-block;
+
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -93,11 +127,18 @@ body {
 }
 
 /* ------Site navigation------- */
-
+.header-nav {
+}
+.header-nav-list {
+    display: flex;
+    /* align-items: baseline; */
+}
+.header-nav-item {
+    /* display: inline; */
+}
 .header-nav-link {
     font-style: normal;
     font-weight: 500;
-
     line-height: 1.14;
     letter-spacing: 0.02em;
 
@@ -112,6 +153,12 @@ body {
 }
 
 /* ---------Contacts-------- */
+.header-contacts-list {
+    display: inline-block;
+}
+.header-contacts-item {
+    display: inline;
+}
 .header-contacts-link {
     font-style: normal;
     font-weight: 500;
@@ -189,11 +236,9 @@ body {
 }
 .features-item-title {
     font-weight: 700;
-
     line-height: 1.14;
     letter-spacing: 0.03em;
 
-    color: var(--title-text-color);
     text-transform: uppercase;
 }
 .features-item-text {
@@ -209,11 +254,8 @@ body {
 .about-title {
     font-weight: 700;
     font-size: 36px;
-
     line-height: 1.16;
     letter-spacing: 0.03em;
-
-    color: var(--title-text-color);
 }
 
 
@@ -224,11 +266,8 @@ body {
 .our-team-title {
     font-weight: 700;
     font-size: 36px;
-
     line-height: 1.16;
     letter-spacing: 0.03em;
-
-    color: var(--title-text-color);
 }
 .our-team-item {
     width: 270px;
@@ -237,15 +276,11 @@ body {
 .stuff-name {
     font-weight: 500;
     font-size: 16px;
-
     line-height: 1.18;
     letter-spacing: 0.03em;
-
-    color: var(--title-text-color);
 }
 .title-position {
     font-size: 16px;
-
     line-height: 1.18;
     letter-spacing: 0.03em;
 
@@ -284,11 +319,8 @@ body {
 .portfolio-card-title {
     font-weight: 700;
     font-size: 18px;
-
     line-height: 2;
     letter-spacing: 0.06em;
-
-    color: var(--title-text-color);
 }
 .portfolio-card-text {
     font-size: 16px;
