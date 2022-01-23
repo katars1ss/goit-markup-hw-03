@@ -10,6 +10,8 @@
     --fourth-bg-color:#eeeeee;
     /* ---декоративная разделительная линия--- */
     --deco-line-color:#ececec;
+    /* ----відступи між картками---- */
+    --card-set-gap : 30px;
 }
 
 html {
@@ -39,6 +41,11 @@ h1,h2,h3,h4,h5,h6 {
 p {
     margin: 0;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 
 .container {
@@ -46,6 +53,7 @@ p {
     padding: 0 15px;
 
     width: 1200px;
+    /* outline: 1px solid tomato; */
 }
 .section {
     margin: 0;
@@ -75,9 +83,11 @@ p {
     border-radius: 4px;
     border-color: transparent;
     background-color: var(--accent-color);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
     cursor:pointer;
+}
+.hero-btn {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* -------------Header------------- */
@@ -252,18 +262,21 @@ p {
 
 .features-title {
     visibility:hidden;
+    width: 0;
+    height: 0;
 }
 .features-list {
     display: flex;
     flex-wrap: wrap;
+
+    margin-left: calc(-1 * var(--card-set-gap));
     font-size: 0;
 }
 .features-item {
-    width: 270px;
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+
     background-color: var(--primery-bg-color);
-}
-.features-item:not(:nth-child(4n)) {
-    margin-right: 30px;
 }
 
 .features-item-title {
@@ -299,18 +312,13 @@ p {
 .about-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
 }
 .about-item {
-    width: 370px;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
 }
-.about-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-.about-item-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 
 
 /* -----------Our-team------------ */
@@ -328,24 +336,24 @@ p {
 .our-team-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
 }
 .our-team-item {
-    width: 270px;
+    margin-left: var(--card-set-gap);
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+
     background-color: var(--primery-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.our-team-item:not(:nth-child(4n)) {
-    margin-right: 30px;
-}
+
 .our-team-avatar {
     display: block;
     max-width: 100%;
     height: auto;
 }
 .our-team-text {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: var(--card-set-gap);
     text-align: center;
 }
 .our-team-name {
@@ -368,23 +376,26 @@ p {
 
 /* ------------Portfolio----------- */
 .portfolio {
-    padding-top: 69px;
+    padding-top:94px;
 }
-/* Ця коррекція padding із-за portfolio-title, або його треба робити display:none */
-.portfolio-title {
+.portfolio-title-hidden {
+    width: 0;
+    height: 0;
     visibility: hidden;
 }
 .portfolio-filter {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-
     margin-bottom: 50px;
 }
 .portfolio-filter-item {
-    margin-left: 8px;
+    margin-right: 8px;
+}
+.portfolio-filter-item:last-child {
+    margin-right: 0;
 }
 .portfolio-filter-btn {
+    padding: 6px 22px;
 
     font-style: normal;
     font-weight: 500;
@@ -400,23 +411,25 @@ p {
 .portfolio-filter-btn:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 }
 
-.portfolio-card-list {
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    margin: -15px;
 }
-.portfolio-card-item {
-    margin: 0 0 30px 30px;
-    width: 370px;
-    height: 404px;
+.portfolio-item {
+    margin: 15px;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
 
     background-color: var(--primery-bg-color);
 }
 .portfolio-card-img {
     display: block;
+    max-width: 370px;
+    height: auto;
 }
 .portfolio-card-content {
     margin: 0;
